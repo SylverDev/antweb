@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col l12">
+            <div class='center'>
+                <h1 id="titreLogin">Se connecter à l'espace d'administration</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row card-panel white">
+        <div class="col l6 offset-l3 input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" name="email" data-error="wrong" data-success="right" class="validate" id="email" ng-model='vm.email' ng-required='true'/>
+            <label for="email" class="validate">Email</label>
+        </div>
+        <div class="col l6 offset-l3 input-field">
+            <i class="material-icons prefix">https</i>
+            <input ng-keyup="$event.keyCode == 13 && vm.login() " type="password" name="pass" data-error="wrong" data-success="right" class="validate" id="password" ng-model='vm.password' ng-required='true'/>
+            <label for="password" class="validate">Mot de passe</label>
+        </div>
+        <div class="col l6 offset-l3 input-field input-field">
+            <div ng-show="(vm.loginMessage)" class="alert" ng-class="{'alert-danger': vm.loginMessage.type == 'error', 'alert-success': vm.loginMessage.type == 'success', 'alert-info': vm.loginMessage.type == 'info'}">
+                <h4>
+                    <span class="glyphicon glyphicon-exclamation-sign pull-left"></span>&nbsp;{{vm.loginMessage.title}}</h4>
+                <p>{{vm.loginMessage.message}}</p>
+            </div>
+            <button id="btnConnectLog" ng-click='vm.login()' ng-disabled="formConnect.$invalid" class="waves-effect btn blue modal-trigger right">Connexion</button>
+            <button id="btnCreateLog" ng-click='vm.createAccount()' ng-disabled="formConnect.$invalid" class="waves-effect btn blue modal-trigger left">Créer</button>
+
+        </div>
+    </div>
+    <div class="col l12">
+        <p class="center-align">
+            <a href="/#/">Retour sur le site</a>
+        </p>
+    </div>
+</div>

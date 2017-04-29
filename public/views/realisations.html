@@ -1,0 +1,15 @@
+<div class="container">
+    <h2 class="header transparent ">Nos réalisations...</h2>
+</div>
+<div class="slick col l12 m12 s12">
+    <slick settings="vm.slickConfig">
+        <div class="repeat" ng-repeat='realisation in vm.realisations'>
+            <!-- <a href="{{realisation.site}}" target="_blank"> -->
+            <img id="imgRealisation" ng-src='{{realisation.logo}}' alt="images des réalisations" />
+            <!-- </a> -->
+            <div id="infosRealisation">
+                <h3 class="center valign">{{realisation.nom}}</h3>
+            </div>
+        </div>
+    </slick>
+</div>

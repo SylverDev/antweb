@@ -1,0 +1,80 @@
+<ng-include src="'../views/admin/sidenav.html'"></ng-include>
+
+    <!-- Titre -->
+    <div class="row">
+        <h3 class="center-align titreAdmin">Réalisations</h3>
+    </div>
+
+    <!-- Boutons ajout, tri, recherches -->
+    <div class="row ">
+        <button class="boutonAdmin boutonAdd col l3 offset-l2" ng-click= "vm.create() ; vm.order='-_id'" ; onclick="Materialize.toast('Insérez votre réalisation', 2500, 'rounded')">
+            Ajouter
+        </button>
+
+        <!-- filtre -->
+        <!-- <select ng-model="vm.query" class="browser-default col s2 m2 l2">
+            <option value="">Tous</option>
+            <option value ='Partenaire'>Partenaire</option>
+            <option value ='Habitant'>Habitant</option>
+        </select> -->
+
+        <!-- Tri -->
+        <select ng-model="vm.order" class="browser-default">
+            <option value="" disabled selected>Ordre d'affichage</option>
+            <option value="nom">Nom croissant</option>
+            <option value="-nom">Nom décroissant</option>
+            <option value="date">Date croissant</option>
+            <option value="-date">Date décroissant</option>
+            <option value="ordre">Ordre croissant</option>
+            <option value="-ordre">Ordre décroissant</option>
+        </select>
+    </div>
+    <!-- Affichage des enregistrements de la table réalisations -->
+    <div class="row">
+        <div class="col l8 offset-l2">
+            <ul class="collapsible popout" data-collapsible="expandable">
+                <li ng-repeat='realisation in vm.realisations | orderBy:vm.order'>
+                    <div class="collapsible-header valign grey">
+                        <i id="btnUpdate" class="material-icons right" onclick="Materialize.toast('Réalisation modifiée', 2500)" ng-click='vm.update(realisation, $index)' ;>save</i>
+                        <i id="btnDelete" class="material-icons right" onclick="Materialize.toast('Réalisation supprimée', 2500)" ng-click='vm.delete(realisation)' ;>delete</i>
+                        <p>{{realisation.nom}}</p>
+                    </div>
+                    <div class="collapsible-body">
+
+                        <label for="nom">Nom</label>
+                        <input id="nom" type="text" ng-model='realisation.nom'>
+
+                        <label for="site">Adresse internet du site</label>
+                        <input id="site" type="text" ng-model='realisation.site'>
+
+                        <label for="description">Description</label>
+                        <input id="description" type="text" ng-model='realisation.description'>
+
+                        <label for="date">Date de réalisation</label>
+                        <input id="date" type="date" name="inputdate" ng-model="realisation.date" />
+
+                        <label for="techno">Technologie utilisée</label>
+                        <input id="techno" type="text" ng-model='realisation.technologie'>
+
+                        <input onchange='openFile(event)' file-upload type="file" id="uploadImage-{{$index}}" accept="image/*" name='file'>
+                        <br>
+                        <img ng-src="{{realisation.logo}}" width="300px" name="showPict" alt="logo du site" id='output' />
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<script type="text/javascript">
+    // affichage image
+    var openFile = function(event) {
+        var input = event.target;
+        var reader = new FileReader();
+        reader.onload = function() {
+            var output = document.getElementById('output');
+            var dataURL = reader.result;
+            output.src = dataURL;
+        };
+        reader.readAsDataURL(input.files[0]);
+    };
+</script>

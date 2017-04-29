@@ -1,0 +1,32 @@
+{
+  "name": "internet-chartres.fr",
+  "version": "0.0.1",
+  "description": "internet-chartres.fr",
+  "authors": [
+    "DarkV"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "angular": "^1.5.6",
+    "angular-route": "^1.5.6",
+    "materialize": "^0.98.0",
+    "slick-carousel": "^1.6.0",
+    "angular-ui-tinymce": "^0.0.18",
+    "angular-sanitize": "^1.6.4"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "package.json",
+    "src",
+    ".*",
+    "CHANGELOG.md",
+    "component.json",
+    "package.json",
+    "_includes",
+    "_layouts"
+  ]
+}

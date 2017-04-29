@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app='app'>
+
+<head>
+    <title>AntWeb - Panneau d'administration</title>
+    <!DOCTYPE html>
+    <html lang="fr" ng-app='app'>
+
+    <head>
+        <title>Les champs du possible - Panneau d'administration</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="../assets/img/logo_antWeb.png">
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+        <link type="text/css" rel="stylesheet" href="../vendor/materialize/dist/css/materialize.min.css" media="screen,projection" />
+        <link rel="stylesheet" href="../assets/css/admin.css">
+    </head>
+
+    <body>
+
+        <!-- <div id='main'> -->
+        <ng-view>autoscroll='true'</ng-view>
+        <!-- </div> -->
+
+        <script src="../vendor/jquery/dist/jquery.min.js"></script>
+        <script src="../vendor/materialize/dist/js/materialize.min.js"></script>
+        <script src="../vendor/angular/angular.min.js"></script>
+        <script src="../vendor/angular-route/angular-route.min.js"></script>
+        <script src="../vendor/tinymce/tinymce.min.js"></script>
+        <script src="../vendor/angular-ui-tinymce/dist/tinymce.min.js"></script>
+
+
+        <script src="../js/factories/sessionFactory.js"></script>
+
+        <script src="../js/services/userService.js"></script>
+        <script src="../js/services/mainService.js"></script>
+        <script src="../js/services/serviceService.js"></script>
+
+
+        <script src="../js/controllers/admin/loginController.js"></script>
+        <script src="../js/controllers/admin/adminController.js"></script>
+        <script src="../js/controllers/admin/serviceController.js"></script>
+        <script src="../js/controllers/navbarController.js"></script>
+
+
+        <script src="../js/directives/findImage.js"></script>
+
+        <script src="../js/routesAdmin.js"></script>
+
+        <script src="../js/appAdmin.js"></script>
+
+    </body>
+
+    </html>

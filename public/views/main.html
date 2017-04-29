@@ -1,0 +1,41 @@
+<ng-include src="'views/navbar.html'"></ng-include>
+
+<!-- Accueil -->
+<div class="parallax-container" id="main">
+    <div class="parallax"><img src="/assets/img/background1.jpg"></div>
+    <div class="row">
+        <ng-include src="'views/header.html'"></ng-include>
+    </div>
+    <img id="imgLogo" ng-src="assets/img/logo_antWeb.png" alt="logo société antweb" />
+</div>
+
+<!-- Service -->
+<div class="section white" id="services">
+    <div class="row">
+        <ng-include src="'views/services.html'"></ng-include>
+    </div>
+</div>
+
+<!-- Projet -->
+<div class="parallax-container " id="projet">
+    <div class="parallax"><img src="/assets/img/background1.jpg"></div>
+    <ng-include src="'views/projet.html'"></ng-include>
+</div>
+
+<!-- Réalisations -->
+<div class="section white" id="realisations">
+    <div class="row">
+        <ng-include src="'views/realisations.html'"></ng-include>
+    </div>
+</div>
+
+<!-- Contact -->
+<div class="parallax-container " id="contact">
+    <div class="parallax"><img src="/assets/img/contact.jpg"></div>
+    <ng-include src="'views/contact.html'"></ng-include>
+</div>
+
+<!-- Footer -->
+<div class="section footer" id="basPage">
+    <ng-include src="'views/footer.html'"></ng-include>
+</div>

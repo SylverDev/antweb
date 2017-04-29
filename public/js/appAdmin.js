@@ -1,0 +1,12 @@
+angular.module('app', ['ngRoute', 'ui.tinymce'])
+    .factory('sessionFactory', sessionFactory)
+    .service('userService', userService)
+    .service('mainService', mainService)
+    .service('serviceService', serviceService)
+    .controller('loginController', loginController)
+    .controller('adminController', adminController)
+    .controller('serviceController', serviceController)
+    .controller('navbarController', navbarController)
+    .directive('file', findImage)
+    .config(routes)
+    .run(loginStatus);

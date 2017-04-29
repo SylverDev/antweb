@@ -1,0 +1,13 @@
+<div class="container">
+    <h2 class="header col l6 m6 s12">Nos services...</h2>
+    <img id="imgService  col l6 m6 s12" class="responsive" ng-src="/assets/img/conception.jpg" alt="image services">
+    <ul class="collapsible popout expandable" data-collapsible="accordion">
+        <li ng-repeat='service in vm.services'>
+            <div class="collapsible-header {{service.couleur}}" ng-click='vm.activeFirst($index)' alt="{{service.titre}}"> <i class="material-icons">{{service.icon}}</i>{{service.titre}}
+            </div>
+            <div class="collapsible-body">
+              <p ng-bind-html='service.texte'> </p>
+            </div>
+        </li>
+    </ul>
+</div>

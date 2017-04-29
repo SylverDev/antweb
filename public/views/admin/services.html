@@ -1,0 +1,61 @@
+<ng-include src="'../views/admin/sidenav.html'"></ng-include>
+
+<!-- <div class="container"> -->
+<!-- Titre -->
+<div class="row">
+  <h3 class="center-align titreAdmin">Services</h3>
+</div>
+
+<!-- Boutons ajout, tri, recherches -->
+<div class="row ">
+  <button class="boutonAdmin boutonAdd col l3 offset-l2" ng-click="vm.create() ; vm.order='-_id'" ; onclick="Materialize.toast('Insérez votre service', 2500, 'rounded')">
+            Ajouter
+        </button>
+
+  <!-- Tri -->
+  <select ng-model="vm.order" class="browser-default">
+            <option value="" disabled selected>Ordre d'affichage</option>
+            <option value="titre">Titre croissant</option>
+              <option value="-titre">Titre décroissant</option>
+            <option value="-_id">Date de création croissant</option>
+            <option value="_id">Date de création décroissant</option>
+    </select>
+</div>
+<!-- Affichage des enregistrements de la table services -->
+<div class="row">
+  <div class="col l8 offset-l2">
+    <ul class="collapsible popout" data-collapsible="expandable">
+      <li ng-repeat='service in vm.services | orderBy:vm.order'>
+        <div class="collapsible-header {{service.couleur}}" ng-click='vm.activeFirst($index)'> <i class="material-icons">{{service.icon}}</i> {{service.titre}}
+          <i id="btnUpdate" class="material-icons right" onclick="Materialize.toast('Service modifié', 2500)" ng-click='vm.update(service, $index)' ;>save</i>
+          <i id="btnDelete" class="material-icons right" onclick="Materialize.toast('Service supprimé', 2500)" ng-click='vm.delete(service)' ;>delete</i>
+        </div>
+        <div class="collapsible-body">
+          <!-- titre: String, texte: String, icon: String, couleur: String -->
+          <label for="titre">Titre</label>
+          <input id="titre" type="text" ng-model='service.titre'>
+          <div class="row selectAdmin" style="padding-left='0'">
+            <div class="col l6 left selectAdmin">
+              <label for="couleur">Couleur de fond</label>
+              <select id="couleur" ng-model='service.couleur' class="browser-default">
+                <option class="{{element}}" ng-repeat="element in vm.colors">{{element}}</option>
+              </select>
+            </div>
+            <div class="col l6 left selectAdmin">
+              <label for="icon">Icon</label>
+              <select id="icon" ng-model='service.icon' class="browser-default">
+                <option class="material-icons" ng-repeat="element in vm.icons">{{element}}</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="paragraph">Paragraphe</label>
+          <textarea id="paragraph" ui-tinymce="vm.tinymceOptions" type="text" ng-model='service.texte'> </textarea>
+
+
+          <!-- <input id="" type="text" ng-model='service.icon'><i class="material-icons">link</i> -->
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

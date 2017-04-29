@@ -1,0 +1,84 @@
+
+
+***** SERVER RESTARTED *****
+
+
+Sat Apr 22 10:50:41.971 [initandlisten] MongoDB starting : pid=30 port=27017 dbpath=/srv/data/db/mongodb 64-bit host=antwebSH3Node.js
+Sat Apr 22 10:50:41.973 [initandlisten] db version v2.4.10
+Sat Apr 22 10:50:41.973 [initandlisten] git version: nogitversion
+Sat Apr 22 10:50:41.973 [initandlisten] build info: Linux julia 3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt2-1 (2014-12-08) x86_64 BOOST_LIB_VERSION=1_55
+Sat Apr 22 10:50:41.973 [initandlisten] allocator: tcmalloc
+Sat Apr 22 10:50:41.973 [initandlisten] options: { bind_ip: "127.0.0.1", command: [ "run" ], config: "/srv/data/.config/mongodb/mongodb.conf", dbpath: "/srv/data/db/mongodb", fork: "true", journal: "true", logappend: "true", logpath: "/srv/data/var/log/db/mongodb.log", maxConns: 16, pidfilepath: "/srv/run/mongodb/mongodb.pid", rest: "true", unixSocketPrefix: "/srv/run/mongodb/", upgrade: true }
+Sat Apr 22 10:50:41.980 [initandlisten] journal dir=/srv/data/db/mongodb/journal
+Sat Apr 22 10:50:41.983 [initandlisten] recover : no journal files present, no recovery needed
+Sat Apr 22 10:50:42.082 [initandlisten] finished checking dbs
+Sat Apr 22 10:50:42.082 dbexit: 
+Sat Apr 22 10:50:42.082 [initandlisten] shutdown: going to close listening sockets...
+Sat Apr 22 10:50:42.082 [initandlisten] shutdown: going to flush diaglog...
+Sat Apr 22 10:50:42.082 [initandlisten] shutdown: going to close sockets...
+Sat Apr 22 10:50:42.082 [initandlisten] shutdown: waiting for fs preallocator...
+Sat Apr 22 10:50:42.082 [initandlisten] shutdown: lock for final commit...
+Sat Apr 22 10:50:42.082 [initandlisten] shutdown: final commit...
+Sat Apr 22 10:50:42.082 [initandlisten] shutdown: closing all files...
+Sat Apr 22 10:50:42.083 [initandlisten] closeAllFiles() finished
+Sat Apr 22 10:50:42.083 [initandlisten] journalCleanup...
+Sat Apr 22 10:50:42.083 [initandlisten] removeJournalFiles
+Sat Apr 22 10:50:42.087 [initandlisten] shutdown: removing fs lock...
+Sat Apr 22 10:50:42.088 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Sat Apr 22 10:50:42.297 [initandlisten] MongoDB starting : pid=42 port=27017 dbpath=/srv/data/db/mongodb 64-bit host=antwebSH3Node.js
+Sat Apr 22 10:50:42.299 [initandlisten] db version v2.4.10
+Sat Apr 22 10:50:42.299 [initandlisten] git version: nogitversion
+Sat Apr 22 10:50:42.299 [initandlisten] build info: Linux julia 3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt2-1 (2014-12-08) x86_64 BOOST_LIB_VERSION=1_55
+Sat Apr 22 10:50:42.299 [initandlisten] allocator: tcmalloc
+Sat Apr 22 10:50:42.299 [initandlisten] options: { bind_ip: "127.0.0.1", command: [ "run" ], config: "/srv/data/.config/mongodb/mongodb.conf", dbpath: "/srv/data/db/mongodb", fork: "true", journal: "true", logappend: "true", logpath: "/srv/data/var/log/db/mongodb.log", maxConns: 16, pidfilepath: "/srv/run/mongodb/mongodb.pid", rest: "true", unixSocketPrefix: "/srv/run/mongodb/" }
+Sat Apr 22 10:50:42.306 [initandlisten] journal dir=/srv/data/db/mongodb/journal
+Sat Apr 22 10:50:42.306 [initandlisten] recover : no journal files present, no recovery needed
+Sat Apr 22 10:50:42.409 [FileAllocator] allocating new datafile /srv/data/db/mongodb/local.ns, filling with zeroes...
+Sat Apr 22 10:50:42.409 [FileAllocator] creating directory /srv/data/db/mongodb/_tmp
+Sat Apr 22 10:50:42.415 [FileAllocator] done allocating datafile /srv/data/db/mongodb/local.ns, size: 16MB,  took 0.003 secs
+Sat Apr 22 10:50:42.513 [FileAllocator] allocating new datafile /srv/data/db/mongodb/local.0, filling with zeroes...
+Sat Apr 22 10:50:42.518 [FileAllocator] done allocating datafile /srv/data/db/mongodb/local.0, size: 64MB,  took 0.003 secs
+Sat Apr 22 10:50:42.539 [initandlisten] command local.$cmd command: { create: "startup_log", size: 10485760, capped: true } ntoreturn:1 keyUpdates:0  reslen:37 130ms
+Sat Apr 22 10:50:42.540 [initandlisten] waiting for connections on port 27017
+Sat Apr 22 10:50:42.540 [websvr] admin web console waiting for connections on port 28017
+Sat Apr 22 10:58:45.214 [initandlisten] connection accepted from 127.0.0.1:57752 #1 (1 connection now open)
+Sat Apr 22 10:58:47.088 [initandlisten] connection accepted from 127.0.0.1:57757 #2 (2 connections now open)
+Sat Apr 22 10:58:47.105 [initandlisten] connection accepted from 127.0.0.1:57758 #3 (3 connections now open)
+Sat Apr 22 11:00:32.089 [conn1] end connection 127.0.0.1:57752 (2 connections now open)
+Sat Apr 22 11:00:33.090 [conn3] end connection 127.0.0.1:57758 (1 connection now open)
+Sat Apr 22 11:00:34.092 [conn2] end connection 127.0.0.1:57757 (0 connections now open)
+Sun Apr 23 14:27:11.317 [initandlisten] connection accepted from 127.0.0.1:33696 #4 (1 connection now open)
+Sun Apr 23 14:27:12.660 [initandlisten] connection accepted from 127.0.0.1:33700 #5 (2 connections now open)
+Sun Apr 23 14:27:12.670 [initandlisten] connection accepted from 127.0.0.1:33701 #6 (3 connections now open)
+Sun Apr 23 14:28:13.077 [conn4] end connection 127.0.0.1:33696 (2 connections now open)
+Sun Apr 23 14:28:15.080 [conn5] end connection 127.0.0.1:33700 (1 connection now open)
+Sun Apr 23 14:28:15.620 [conn6] end connection 127.0.0.1:33701 (0 connections now open)
+Sun Apr 23 16:14:17.675 [initandlisten] connection accepted from 127.0.0.1:49816 #7 (1 connection now open)
+Sun Apr 23 16:15:54.576 [conn7] end connection 127.0.0.1:49816 (0 connections now open)
+Sun Apr 23 16:15:55.219 [initandlisten] connection accepted from 127.0.0.1:50030 #8 (1 connection now open)
+Sun Apr 23 16:15:55.303 [initandlisten] connection accepted from 127.0.0.1:50031 #9 (2 connections now open)
+Sun Apr 23 16:16:56.632 [conn8] end connection 127.0.0.1:50030 (1 connection now open)
+Sun Apr 23 16:16:57.632 [conn9] end connection 127.0.0.1:50031 (0 connections now open)
+Sun Apr 23 16:40:38.763 [initandlisten] connection accepted from 127.0.0.1:52372 #10 (1 connection now open)
+Sun Apr 23 16:43:01.050 [conn10] end connection 127.0.0.1:52372 (0 connections now open)
+Sun Apr 23 20:03:19.336 [initandlisten] connection accepted from 127.0.0.1:43268 #11 (1 connection now open)
+Sun Apr 23 20:03:20.776 [initandlisten] connection accepted from 127.0.0.1:43270 #12 (2 connections now open)
+Sun Apr 23 20:04:21.269 [conn11] end connection 127.0.0.1:43268 (1 connection now open)
+Sun Apr 23 20:04:22.269 [conn12] end connection 127.0.0.1:43270 (0 connections now open)
+Wed Apr 26 14:29:16.430 [initandlisten] connection accepted from 127.0.0.1:34957 #13 (1 connection now open)
+Wed Apr 26 14:29:17.702 [initandlisten] connection accepted from 127.0.0.1:34962 #14 (2 connections now open)
+Wed Apr 26 14:29:17.765 [initandlisten] connection accepted from 127.0.0.1:34963 #15 (3 connections now open)
+Wed Apr 26 14:30:18.032 [conn13] end connection 127.0.0.1:34957 (2 connections now open)
+Wed Apr 26 14:30:19.033 [conn14] end connection 127.0.0.1:34962 (1 connection now open)
+Wed Apr 26 14:30:20.035 [conn15] end connection 127.0.0.1:34963 (0 connections now open)
+Wed Apr 26 15:00:55.200 [initandlisten] connection accepted from 127.0.0.1:37495 #16 (1 connection now open)
+Wed Apr 26 15:01:01.411 [initandlisten] connection accepted from 127.0.0.1:37507 #17 (2 connections now open)
+Wed Apr 26 15:02:36.790 [conn16] end connection 127.0.0.1:37495 (1 connection now open)
+Wed Apr 26 15:02:37.792 [conn17] end connection 127.0.0.1:37507 (0 connections now open)
+Wed Apr 26 15:03:05.186 [initandlisten] connection accepted from 127.0.0.1:37659 #18 (1 connection now open)
+Wed Apr 26 15:04:17.881 [conn18] end connection 127.0.0.1:37659 (0 connections now open)

@@ -1,0 +1,38 @@
+<ul id="slide-out" class="side-nav" role="navigation" ng-controller='loginController as vm'>
+    <li>
+        <div class="userView">
+            <a>
+                <span id="titrePanneau">Panneau d'administration</span>
+            </a>
+            <a>
+                <span id="question">Que souhaitez-vous modifier ?</span>
+            </a>
+            <p>Utilisateur connecté : {{vm.sessionFactory.user.email}}</p>
+        </div>
+    </li>
+    <li>
+        <a class="itemSideNavAdmin" href="#!/realisations">
+            <i class="material-icons">chat</i>Réalisations</a>
+    </li>
+    <li>
+        <a class="itemSideNavAdmin" href="#!/services">
+            <i class="material-icons">chat</i>Services</a>
+    </li>
+
+    <li>
+        <a class="itemSideNavAdmin" ng-click='vm.logout()' href="">
+            <i class="material-icons">exit_to_app</i>Se déconnecter</a>
+    </li>
+    <li>
+        <a class="itemSideNavAdmin" ng-click='vm.logout()' href="../">
+            <i class="material-icons">keyboard_backspace</i>Retour au site</a>
+    </li>
+</ul>
+<a href="#" data-activates="slide-out" class="button-collapse btn">
+    <i class="material-icons">menu</i>
+</a>
+<script>
+    $('.button-collapse').sideNav({
+        closeOnClick: true
+    });
+</script>

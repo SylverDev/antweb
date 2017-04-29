@@ -1,0 +1,117 @@
+body {
+  background-image: url(../img/background1.jpg);
+  background-size: cover;
+}
+
+
+/* Login */
+
+
+/*
+#titreLogin {
+    color: grey;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}*/
+
+
+/* Menu navigation Administration */
+
+.button-collapse {
+  background-color: blue!important;
+}
+
+#sideNavAdmin {
+  position: absolute;
+}
+
+#titrePanneau {
+  color: #D9009F;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#question {
+  font-size: 17px;
+}
+
+.userView {
+  padding: 5% 10% 10% 10%!important;
+}
+
+.itemSideNavAdmin {
+  padding: 0 0 5% 15%!important;
+}
+
+
+/*Pages d'administration*/
+
+.titreAdmin {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+}
+
+.collapsible-header {
+  background-color: dark-grey!important;
+  font-size: 1.5rem;
+  height: 25px;
+  margin-top: 2%;
+}
+
+.collapsible.popout {
+  border: none;
+  box-shadow: none;
+  margin: -28px!important;
+  -webkit-padding-before: 2%!important;
+  -webkit-padding-after: 10%!important;
+}
+
+.collapsible-body {
+  margin: 10px 10px 10px 10px!important;
+}
+
+.collapsible-body * {
+  background-color: white!important;
+  color: black;
+  height: auto;
+  padding-left: 2%;
+}
+
+
+/*Boutons ajouter -liste de tri angular adaptée (celle de materialize ne fonctionne pas)*/
+
+.selectAdmin {
+  background-color: transparent!important;
+  padding-left: 0px!important;
+  margin-left: 0px!important;
+}
+
+.boutonAdd {
+  background-color: blue;
+  color: white;
+  height: 40px;
+  margin-right: 20px;
+  width: 250px!important;
+}
+
+.browser-default {
+  background-color: white;
+  height: 40px;
+  width: 250px!important;
+}
+
+
+/*Boutons supprimer - enregistrer sur collapsible */
+
+#btnDelete {
+  background-color: grey;
+  color: #E808B2;
+}
+
+#btnUpdate {
+  background-color: grey;
+  color: #6CD4F7;
+}
